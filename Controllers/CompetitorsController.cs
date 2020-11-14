@@ -6,8 +6,8 @@ using Microsoft.Extensions.Logging;
 
 namespace competitors.Controllers
 {
-  // http://localhost:5000/api/competitors
-  [Route("[api/controller]")]
+  // http://localhost:5001/api/competitors
+  [Route("api/[controller]")]
   [ApiController]
   public class CompetitorsController : ControllerBase
   {
