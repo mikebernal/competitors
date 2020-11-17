@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using games.Data;
+using competitors.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,9 +27,9 @@ namespace competitors
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<GameDbConnection>(options =>
+            services.AddDbContext<CompetitorsDbConnection>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("GamesDbConnection"));
+                options.UseSqlServer(Configuration.GetConnectionString("CompetitorsDbConnection"));
             });
 
             services.AddControllers();

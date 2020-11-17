@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-
 namespace competitors.Models
 {
     public class Competitor
@@ -15,8 +14,6 @@ namespace competitors.Models
         public string Contact { get; set; }
         public string Website { get; set; }
         public string Photo { get; set; }
-
-        public ICollection<Game> Games { get; set; }
-
+        // public ICollection<Game> Games { get; set; }
     }
 }
